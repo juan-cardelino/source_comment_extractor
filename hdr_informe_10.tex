@@ -1,0 +1,60 @@
+\documentclass[11pt]{report}
+
+% paquetes
+\usepackage{ucs}
+\usepackage[latin1,utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[none]{hyphenat}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage[tight,scriptsize]{subfigure}
+
+\usepackage{jfc}
+
+\hypersetup{bookmarks=true,hypertexnames, plainpages=false,colorlinks=true}
+
+% t\'{\i}tulos
+\title{Informe}
+\author{Juan Cardelino}
+% \email[Juan Cardelino]{juanc@fing.edu.uy}
+\date{\today}
+
+\if@twoside                 % Values for two-sided printing:
+\oddsidemargin 0.7cm     %   Left margin on odd-numbered pages.
+\evensidemargin 0.12cm    %   Left margin on even-numbered pages.
+\marginparwidth 40pt     %   Width of marginal notes.
+\else                       % Values for one-sided printing:
+\oddsidemargin 0.35in    %   Note that \oddsidemargin = \evensidemargin
+\evensidemargin 0.35in
+\marginparwidth 40pt
+\fi
+\marginparsep 10pt          % Horizontal space between outer margin and
+% marginal note
+\textwidth 16cm            % width of text
+
+%\usepackage{thesis}
+% \hyperbaseurl{http://iie.fing.edu.uy/~juanc/work/reporte/inf4}
+% \hyperbaseurl{http://iie.fing.edu.uy/rosaluna/juanc/work/reporte/inf4/}
+\hyperbaseurl{file:///discos/data1/juanc/publications/reports/tmaps}
+
+\begin{document}
+
+\tableofcontents
+\pagebreak
+\renewcommand{\imdir}{images/img9}
+\renewcommand{\figDir}{images/img9}
+\input{DeformableRegistration1.tex}
+\cleardoublepage
+%\section{complete results}
+%\input{\resDir/comments}
+%\input{figuras}
+
+ 
+
+% \cleardoublepage
+% \section{Referencias}
+\bibliographystyle{unsrt}
+\bibliography{../../papers/tools/references,../../papers/tools/graph_theory,../../papers/tools/bib_enric,../../papers/tools/grap_theory}
+
+\end{document}
