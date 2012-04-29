@@ -10,3 +10,21 @@ In addition, sometimes is useful to extract the comments along with the code, wh
 The aim of these tools is to extract comments from the code, allowing them to have math written in latex, and output a latex (and doxygen in the future) file to be compiled in a documentation.
 
 The original scripts where written by the ITK team for their SoftwareGuide, so most of the credit goes to them.
+
+Requirements
+============
+
+* scripts: you need perl installed to generate the latex output
+* latex: the latex output is standard, so you need a latex distribution and the listings package available. If you dont want to use listings, it can be disabled in the perl scripts.
+ 
+
+Instructions
+============
+
+generate latex
+./ParseCxxExamples.pl DeformableRegistration1.cxx DeformableRegistration1.tex
+edit master document hdr_example.tex to include DeformableRegistration1.tex
+run latex
+pdflatex hdr_example.tex
+
+You can see an example ouput in the file DeformableRegistration1.pdf
