@@ -27,4 +27,4 @@ edit master document hdr_example.tex to include DeformableRegistration1.tex
 run latex
 pdflatex hdr_example.tex
 
-You can see an example ouput in the file DeformableRegistration1.pdf
+You can see an example ouput in the file hdr_example.pdf
